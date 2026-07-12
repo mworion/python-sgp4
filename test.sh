@@ -30,3 +30,7 @@ PYTHON_SGP4_COMPILE=always uv run \
    --with ..,numpy \
    --reinstall-package sgp4 \
    -m unittest sgp4.tests
+
+# There are extensive doctests in the project README.
+
+python3 -m doctest -o ELLIPSIS README.rst
